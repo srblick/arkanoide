@@ -1,6 +1,6 @@
 public class AnimationManager{
 //  protected PImage[] frames;
-  private int frameActual;
+//  private int frameActual;
   private int animationActual;
   private ArrayList<Animation> animations;
   
@@ -19,12 +19,12 @@ public class AnimationManager{
     return this.animations.get(this.animationActual).animate();
   }
 
-  public void setFrameActual(int frameActual){
+/*  public void setFrameActual(int frameActual){
     this.frameActual = frameActual;
   }  
   public int getFrameActual(){
     return this.frameActual;
-  }  
+  }  */
 /*  public PImage setFrame(int frame){
     return this.frames[frame];
   }

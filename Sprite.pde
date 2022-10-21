@@ -18,10 +18,10 @@ class Sprite{
     PImage aux = loadImage(this.url);    
     for(int i=0; i<this.leng; i++){
       this.frames[i] = aux.get(i*this.ancho%aux.width,((i*this.ancho)/aux.width)*this.alto, this.ancho, this.alto);
-      this.frames[i].resize(this.ancho*width/1088, this.alto*height/832);
+//      this.frames[i].resize(this.ancho*width/1088, this.alto*height/832);
     }
-    this.ancho = this.ancho*width/1088;
-    this.alto = this.alto*height/832;
+//    this.ancho = this.ancho*width/1088;
+//    this.alto = this.alto*height/832;
   }
 
   public int getAlto(){

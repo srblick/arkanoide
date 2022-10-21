@@ -17,24 +17,18 @@ public class Animation{
     }
 
     public int animate(){
-        println(this.frame+"solo");
         if(this.frames.length == 1){
-        println(this.frame+"=1");
           return this.frames[this.frame];
         }
         if (this.stop){
-        println(this.frame+"stop");
             return this.frames[this.frame];
         }else if (!this.end && cambiarFrame()){
             this.frame++;
-        println(this.frame+"++");
         }
         if (this.frame == (this.frames.length - 1) && !this.loop){
             this.end = true;
-        println(this.frame+"end");
         }else {
             this.frame = this.frame % this.frames.length;
-        println(this.frame+"%");
         }
         return this.frames[this.frame];
     }

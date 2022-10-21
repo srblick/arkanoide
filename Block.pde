@@ -15,7 +15,7 @@ class Block extends GameObject{
         if (typeBlock < 9){
           this.resistance = 1;
           puntajeOtorgado = 100 + typeBlock * 20;
-          animationManager.add(new Animation(new int[]{typeBlock}, 6, false));
+          animationManager.add(new Animation(new int[]{typeBlock}, 1, false));
         }else if (typeBlock == 9){
           this.resistance = 2;
           puntajeOtorgado = 100 + typeBlock * 20 * 2;
@@ -28,8 +28,7 @@ class Block extends GameObject{
     }
 
     public void display(){
-      println(animationManager.frameActual()+"block");
-//      image(frames[animationManager.frameActual()], this.position.x - 1, this.position.y - 1);
+      image(frames[animationManager.frameActual()], this.position.x - 1, this.position.y - 1);
     }
     
     public boolean contieneItem(){
